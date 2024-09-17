@@ -8,7 +8,7 @@ const articles = ref([]);
 onMounted(async () => {
   try {
     const response = await axios.get(
-      "/api/page?limit=10&page=1"
+      "https://xder.bieda.it/blog/blog/page?limit=10&page=1"
     );
     articles.value = response.data.results;
   } catch (error) {
