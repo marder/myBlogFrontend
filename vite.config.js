@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://xder.bieda.it/blog",
+        target: "https://xder.bieda.it/blog/blog/",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
