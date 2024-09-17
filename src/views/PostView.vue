@@ -12,7 +12,7 @@ const postId = route.params.id;
 
 onMounted(async () => {
   try {
-    const response = await axios.get(`/api/blog/${postId}`);
+    const response = await axios.get(`https://xder.bieda.it/blog/blog/${postId}`);
     article.value = response.data;
     console.log(article.value.title);
   } catch (error) {
